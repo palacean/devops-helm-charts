@@ -45,7 +45,7 @@ spec:
           livenessProbe:
             httpGet:
               path: {{ .Values.health.liveness.path }}
-              port: {{ .Values.health.actuatorPort }}
+              port: {{ .Values.actuatorPort }}
             initialDelaySeconds: {{ .Values.health.liveness.initialDelaySeconds }}
             periodSeconds: {{ .Values.health.liveness.periodSeconds }}
             timeoutSeconds: {{ .Values.health.liveness.timeoutSeconds }}
